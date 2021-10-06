@@ -1,0 +1,738 @@
+:root {
+  --bg-first: #f9e0ae;
+  --bg-second: #fc8621;
+  --bg-three: #c24914;
+  --bg-four: #682c0e;
+}
+
+.bg-first {
+  background-color: var(--bg-first);
+}
+
+.bg-second {
+  background-color: var(--bg-second);
+}
+
+.bg-third {
+  background-color: var(--bg-three);
+}
+
+.bg-fourth {
+  background-color: var(--bg-four);
+}
+
+.color-first {
+  color: var(--bg-first);
+}
+
+.color-second {
+  color: var(--bg-second);
+}
+
+.color-third {
+  color: var(--bg-three);
+}
+
+.color-fourth {
+  color: var(--bg-four);
+}
+
+.hover {
+  transition: all ease-in-out 2.5s;
+}
+
+.hover:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/* ================== Color declaration end ==================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+
+/* ================== Font declaration end ==================== */
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+.section {
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+@keyframes textleft {
+  from {
+    transform: translateX(-1500px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes textbottom {
+  from {
+    transform: translateX(1500px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ==========================Header Section Start ========================== */
+
+.header {
+  position: relative;
+}
+.header .toph {
+  background-image: linear-gradient(to right, #042b99 10%, #0b5bcb 90%);
+}
+.header .toph a {
+  font-size: 12px;
+  transition: all 0.5s;
+}
+.header .toph a:hover {
+  text-decoration: underline;
+  letter-spacing: 0.5px;
+}
+.header nav img {
+  width: 150px;
+}
+.header .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+.header .navbar .navbar-nav .nav-item {
+  position: relative;
+}
+.header .navbar .navbar-nav .nav-item ul {
+  position: absolute;
+  top: 100%;
+  width: 140px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 2px;
+  /* box-shadow: 1px 1px 10px black; */
+  padding: 1px 0;
+  transition: all 0.5s;
+  z-index: -1;
+  transform: translateY(20px);
+  opacity: 0;
+  border: 1px solid black;
+}
+.header .navbar .navbar-nav .nav-item:hover ul {
+  transform: translateY(0px);
+  z-index: 1;
+  opacity: 1;
+}
+.header .navbar .navbar-nav .nav-item ul li {
+  padding: 5px 20px;
+  transition: all 0.5s;
+}
+.header .navbar .navbar-nav .nav-item > ul > li:hover {
+  background-color: #03218f93;
+  color: white;
+}
+.header .navbar .navbar-nav .nav-item > ul li a {
+  font-size: 12px;
+}
+.header .navbar .navbar-nav .nav-item > ul > li:hover > a {
+  color: white;
+}
+.header .navbar button {
+  padding: 13px 22px;
+  border-radius: 2px;
+  font-size: 14px;
+  transition: all 0.5s;
+  /* background-image: linear-gradient(to right, #042b99 10%, #0b5bcb 90%); */
+}
+.header .d-flex a {
+  background-color: #03228f;
+  color: #fff;
+  font-size: 16px;
+  padding: 13px 22px;
+  border-radius: 4px;
+  transition: all 0.3s;
+  border: #03228f 1px solid;
+}
+.header .d-flex a:hover {
+  background-color: #fff;
+  color: #03228f;
+}
+
+/* ========================== Header Section End ========================== */
+
+/* ========================== Banner Section Start ========================== */
+
+.banner {
+  background-image: url(../image/banner-6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 100px 0;
+}
+
+.banner span {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+  margin-bottom: 15px;
+  font-family: "Nunito", sans-serif;
+  animation: textleft 4s linear 1s 1 normal both;
+}
+
+.banner h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 25px;
+  z-index: -100;
+  animation: textbottom 4s linear 1s 1 normal both;
+}
+
+.banner p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+  animation: textleft 2s linear 0s 1 normal both;
+}
+
+.banner a.btn-1 {
+  background-color: #fff;
+  font-size: 16px;
+  padding: 13px 22px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.banner a.btn-1:hover {
+  background-color: #03228f;
+  color: #fff;
+}
+.banner a.btn-2 {
+  background-color: #03228f;
+  color: #fff;
+  border: 1px #fff solid;
+  font-size: 16px;
+  padding: 13px 22px;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+.banner a.btn-2:hover {
+  background-color: #fff;
+  color: #03228f;
+}
+/* ========================== Banner Section End ========================== */
+
+/* ========================== About Section Start ========================== */
+@keyframes imgscale {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+  }
+}
+.about {
+  padding: 100px 0;
+  /* background-image: url(../image/round.png); */
+  background-position: right;
+  background-repeat: no-repeat;
+  transition: all 1s;
+  z-index: 10;
+}
+
+.about .aboutt {
+  background-image: url(../image/round.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  /* overflow: hidden; */
+}
+
+.about .aboutt img {
+  width: 100%;
+  transform: scale(1.1, 1.1);
+  position: relative;
+  top: 30px;
+  animation: imgscale 5s linear infinite alternate;
+}
+
+.about span {
+  margin: 0 0 10px;
+  font-family: "Nunito", sans-serif;
+  display: block;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #03228f;
+  text-transform: uppercase;
+}
+
+.about h2 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  /* line-height: 1.4; */
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 31px;
+  font-weight: 200;
+  color: #454545;
+  font-family: "Nunito", sans-serif;
+}
+
+.about a {
+  background-color: #03228f;
+  color: #fff;
+  font-size: 16px;
+  padding: 13px 22px;
+  border-radius: 4px;
+  border: 1px solid #03228f;
+  transition: all 0.3s;
+}
+.about a:hover {
+  background-color: #fff;
+  color: #03228f;
+}
+.about .fal {
+  color: #03228f;
+  line-height: 54px;
+}
+
+.about .exp .h6 {
+  color: #141d38;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about .icon {
+  width: 54px;
+  margin-right: 10px;
+}
+
+.about .exp p {
+  position: relative;
+  color: #555555;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* ========================== About Section End ========================== */
+
+/* ========================== Service Section Start  ========================== */
+
+.heading {
+  text-align: center;
+}
+
+.heading span {
+  margin: 0 0 10px;
+  display: block;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #03228f;
+  text-transform: uppercase;
+}
+
+.heading h2 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading p {
+  font-size: 18px;
+  line-height: 31px;
+  font-weight: 400;
+  color: #454545;
+  max-width: 700px;
+  margin: 13px auto 0;
+}
+
+.service .artical {
+  margin: 30px 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  transition: all 1s;
+}
+.service .artical:hover {
+  background-color: #042b99;
+}
+
+.service .artical::before,
+.artical::after {
+  content: " ";
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background-color: #2241979f;
+  transition: all 0.4s;
+}
+.service .artical:hover:before {
+  top: -55px;
+  right: -55px;
+}
+.service .artical::after {
+  background-color: #3552a38a;
+  transition-delay: 0.2s;
+}
+
+.service .artical:hover::after {
+  top: -70px;
+  right: -70px;
+}
+.service .artical img {
+  width: 50px;
+  margin: 5px 0;
+}
+
+.service .artical h4 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #102b3e;
+  z-index: 12;
+}
+.service .artical:hover h4 {
+  color: #fff;
+}
+.service .artical p {
+  font-size: 14px;
+  color: #454545;
+  margin: 0 0 26px;
+  line-height: 1.8;
+}
+.service .artical:hover p {
+  color: #fff;
+}
+
+.service .artical button.btn {
+  padding: 13px 22px;
+  font-size: 16px;
+  color: #042b99;
+  font-weight: bold;
+}
+.service .artical:hover button.btn {
+  background-color: #fff;
+}
+
+/* ========================== Service Section End ========================== */
+
+/* ========================== Started Section Start ========================== */
+
+.started {
+  padding: 100px 0;
+  background-image: url(../image/call-action.jpg);
+  text-align: center;
+}
+
+.started .heading span {
+  margin: 0 0 10px;
+  display: block;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.started .heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 auto;
+  color: white;
+  max-width: 700px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.started button.btn {
+  font-size: 16px;
+  font-weight: 500;
+  color: #032491;
+  margin-top: 25px;
+  padding: 17px 30px 17px 30px;
+  background: transparent;
+  background-image: linear-gradient(90deg, #fff 19%, #fff 100%);
+  border-radius: 4px;
+}
+
+/* ========================== Started Section End ========================== */
+
+/* ========================== How be Work Section Start ========================== */
+
+.work {
+  padding: 100px 0;
+  background-color: #f2f3f4;
+}
+
+.workl {
+  padding: 100px 30px;
+  background-image: url(../image/work-bg.png);
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.workl span {
+  margin: 0 0 10px;
+  display: block;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.workl h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 46px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.workl p {
+  font-size: 18px;
+  line-height: 31px;
+  font-weight: 400;
+  color: #fff;
+  max-width: 700px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.workl button.btn {
+  font-size: 16px;
+  font-weight: 500;
+  color: #032491;
+  margin-top: 25px;
+  padding: 16px 30px 16px 30px;
+  background: transparent;
+  background-image: linear-gradient(90deg, #fff 19%, #fff 100%);
+  border-radius: 4px;
+}
+
+.workr h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #03228f;
+  font-family: "Montserrat", sans-serif;
+}
+
+.work h4 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #101010;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.workr p {
+  font-size: 16px;
+  color: #454545;
+  font-family: "Montserrat", sans-serif;
+  /* padding-right: 34px; */
+  margin: 0;
+}
+
+.workr .col-10 {
+  padding: 37px 30px;
+  background-color: #fff;
+  border-bottom: 7px solid #095fd0;
+}
+
+/* ========================== How be Work Section End ========================== */
+
+/* ========================== Testimonial Section Start ========================== */
+
+.testimonial .firstrow {
+  background-image: url(../image/testi-home7.jpg);
+  background-size: cover;
+  padding: 100px 0;
+  border-radius: 10px;
+}
+
+.testimonial h4 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+/* .testimonial .testl {
+    padding-left: 50px;
+} */
+
+.testimonial .testl .heading span {
+  margin: 0 0 10px;
+  display: block;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.testimonial .testl .heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 auto;
+  color: white;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+.testimonial .testr .row {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.testimonial .testr .row img {
+  width: 60px;
+  border-radius: 10px;
+}
+
+.testimonial .testr .row h4 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.testimonial .testr .row span {
+  font-size: 16px;
+  display: block;
+  color: #878787;
+  margin-top: 5px;
+}
+
+.testimonial .testr .row p {
+  font-size: 16px;
+  padding-top: 30px;
+  color: #555555;
+}
+
+/* ========================== Testimonial Section End ========================== */
+
+/* ========================== Footer Section Start ========================== */
+
+.footer {
+  background-image: url(../image/footer-5.png);
+  color: #454545ab;
+}
+
+.footer .footer-top .flogo img {
+  width: 220px;
+  margin-bottom: 25px;
+}
+
+.footer .footer-top a {
+  color: #454545ab;
+  transition: all 1s;
+}
+.footer .footer-top a:hover {
+  color: #000;
+
+  text-shadow: 0px 2px 4px #0b5bcb;
+}
+
+.footer .footer-top h5 {
+  color: #111111;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 25px;
+}
+
+.footer .footer-top p {
+  font-size: 16px;
+  color: #454545ab;
+  transition: all 1s;
+}
+.footer .footer-top p:hover {
+  color: #000;
+
+  text-shadow: 0px 2px 4px #0b5bcb;
+}
+
+.footer .footer-top .flogo ul li {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.5s;
+}
+.footer .footer-top .flogo ul li:hover {
+  background-color: #0b5bcb8f;
+  color: #fff;
+}
+
+.footer .footer-top .fservice {
+  padding-left: 40px;
+}
+
+.footer .footer-top .fservice ul {
+  padding: 0;
+}
+
+.footer .footer-top .fcontact .col-12 i.fal {
+  color: #0b5bcb;
+}
+
+.footer .footer-top .fnews .email {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #fff;
+  position: relative;
+}
+
+.footer .footer-top .fnews .email input {
+  border: none;
+}
+
+.footer .footer-top .fnews .email .fab {
+  color: #0b5bcb;
+  font-size: 46px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* ========================== Footer Section End ========================== */

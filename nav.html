@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 1em;
+            color: #fff;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .header {
+            background-color: black;
+            padding: 15px 20px;
+            font-family: sans-serif;
+            position: relative;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+            float: left;
+        }
+        
+        .nav>ul {
+            list-style: none;
+            float: right;
+            margin-top: 5px;
+        }
+        
+        .nav>ul>li {
+            float: left;
+            margin: 0 10px;
+        }
+        /* Sub OF About */
+        
+        ul li>.sub {
+            position: absolute;
+            top: 100%;
+            background-color: black;
+            width: 160px;
+            font-size: 14px;
+            list-style: none;
+            transform: rotateX(90deg);
+            transition: all .5s;
+            transform-origin: top;
+        }
+        
+        ul li>.sub>li {
+            color: white;
+            padding: 10px 20px;
+            transition: all .3s;
+        }
+        
+        ul li>.sub>li:hover {
+            background-color: white;
+            color: black;
+        }
+        
+        .nav ul li:hover .sub {
+            transform: rotateX(0);
+        }
+        
+        ul>li>.sub>li {
+            position: relative;
+        }
+        
+        ul>li>.sub>li>.sub2 {
+            position: absolute;
+            top: 0;
+            right: 100%;
+            background-color: black;
+            width: 160px;
+            font-size: 14px;
+            list-style: none;
+            transform-origin: top;
+            transform: rotateX(90deg);
+            transition: all .5s;
+        }
+        
+        ul>li>.sub>li:hover .sub2 {
+            transform: rotateX(0);
+        }
+        
+        ul li>.sub>li>.sub2>li {
+            color: white;
+            padding: 10px 20px;
+            transition: all .3s;
+        }
+        
+        ul li>.sub>li>.sub2>li:hover {
+            background-color: white;
+            color: black;
+        }
+        /*         
+        #about {
+            display: none;
+        }
+        
+        #about:checked~.sub {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        ul li>.sub>li {
+            color: white;
+            padding: 10px 20px;
+            transition: all .3s;
+        }
+        
+        ul li>.sub>li:hover {
+            background-color: white;
+            color: black;
+        }
+        Sub OF Service
+        
+        #service {
+            display: none;
+        }
+        
+        #service:checked~.sub {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        Sub OF Strategy
+        
+        #strategy {
+            display: none;
+        }
+        
+        #strategy:checked~.sub {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        Sub OF IT
+        
+        #it {
+            display: none;
+        }
+        
+        #it:checked~.sub {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        Sub OF Traning
+        
+        #traning {
+            display: none;
+        }
+        
+        #traning:checked~.sub {
+            transform: translateY(0);
+            opacity: 1;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="#">Jitender</a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li> About
+                    <!-- <label for="about">   About</label>
+                    <input type="checkbox" id="about"> -->
+
+                    <ul class="sub">
+                        <li> Profile</li>
+                        <li>Managment Team</li>
+                        <li>Our Client</li>
+                        <li>Our Strategy
+                            <!-- <label for="strategy"> Our Strategy</label>
+                            <input type="checkbox" name="" id="strategy"> -->
+                            <ul class="sub2">
+                                <li>Web Strategy</li>
+                                <li>Application</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- <label for="service">Service</label>
+                    <input type="checkbox" id="service"> -->
+                    Service
+
+                    <ul class="sub">
+                        <li>
+                            <!-- <label for="it">It Service</label>
+                            <input type="checkbox" name="" id="it"> -->
+                            It Service
+                            <ul class="sub2">
+                                <li>Web Application</li>
+                                <li>Software Applicatiion</li>
+                                <li>E-lerning</li>
+                                <li>SMS Solution</li>
+                                <li>HR counsltancy</li>
+                            </ul>
+                        </li>
+                        <li>Traning
+                            <!-- <label for="traning">Traning</label>
+                            <input type="checkbox" name="" id="traning"> -->
+                            <ul class="sub2">
+                                <li>Project Traning</li>
+                                <li>Corporate Traning</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Portfolio</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
